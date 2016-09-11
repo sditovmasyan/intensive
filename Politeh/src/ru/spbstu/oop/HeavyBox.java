@@ -12,9 +12,9 @@ class HeavyBox extends Box {
     }
 
     HeavyBox(int width, int height, int depth, int weight) {
-        this.width = width;
-        this.height = height;
-        this.depth = depth;
+        setWidth(width);
+        setHeight(height);
+        setDepth(depth);
         this.weight = weight;
     }
 
