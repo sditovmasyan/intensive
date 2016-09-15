@@ -34,6 +34,7 @@ public class FinallyDemo {
         } catch (Exception e) {
         }
         procB();
+
     }
 
 

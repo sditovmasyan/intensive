@@ -10,7 +10,8 @@ import java.util.logging.Logger;
 public class TryCatchFinallyExample {
 
     public static int getAreaValue(int x, int y) {
-        if (x < 0 || y < 0) throw new IllegalArgumentException("value of 'x' or 'y' is negative: x=" + x + ", y=" + y);
+        if (x < 0 || y < 0)
+            throw new IllegalArgumentException("value of 'x' or 'y' is negative: x=" + x + ", y=" + y);
         return x * y;
     }
 
@@ -25,7 +26,7 @@ public class TryCatchFinallyExample {
      * это не сделано потому что исключение IllegalArgumentException является не проверяемым, о них мы ещё поговорим
      */
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         int result = 0;
 

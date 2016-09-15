@@ -16,9 +16,9 @@ public class SeveralExceptions {
         FileInputStream fis = null;
         try{
             fis = new FileInputStream(fileName);
-        }catch (FileNotFoundException ex){
+        }catch (IOException ex){
             System.out.println("Oops, FileNotFoundException caught");
-        }catch (IOException e) {
+        }catch (Exception e) {
             System.out.println("Oops, something went wrong with file");
         }
 
