@@ -11,7 +11,9 @@ public class SynchronizedAccessor3 {
 
     private static SynchronizedAccessor3 instance;
 
-    public static synchronized SynchronizedAccessor3 getInstance() {
+    public static synchronized
+    SynchronizedAccessor3
+    getInstance() {
         if (instance == null) {
             instance = new SynchronizedAccessor3();
         }

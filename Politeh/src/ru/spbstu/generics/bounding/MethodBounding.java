@@ -6,15 +6,16 @@ package ru.spbstu.generics.bounding;
 public class MethodBounding {
 
     /** Будет ошибка компиляции, так как e и elem нельзя сравнить через >. Так можно сравнивать примитивы
-    public static <T> int countGreaterThan(T[] anArray, T elem) {
+
+     public static <T> int countGreaterThan(T[] anArray, T elem) {
         int count = 0;
         for (T e : anArray)
             if (e > elem)
                 ++count;
         return count;
-    }
+    }*/
 
-     */
+
 
     /** Но можем переделать метод  на работу с компаратором
      * public interface Comparable<T> {
@@ -22,7 +23,8 @@ public class MethodBounding {
      *}
      */
 
-    public static <T extends Comparable<T>> int countGreaterThan(T[] anArray, T elem) {
+    public static <T extends Comparable<T>>
+    int countGreaterThan(T[] anArray, T elem) {
         int count = 0;
         for (T e : anArray)
             if (e.compareTo(elem) > 0)

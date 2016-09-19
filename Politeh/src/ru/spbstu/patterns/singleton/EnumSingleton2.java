@@ -13,5 +13,11 @@ public enum EnumSingleton2 {
      * - Не ленивая инициализация
      */
 
-    INSTANCE;
+    SASHA;
+
+    private EnumSingleton2() {
+        System.out.println("1");
+    }
+
+
 }

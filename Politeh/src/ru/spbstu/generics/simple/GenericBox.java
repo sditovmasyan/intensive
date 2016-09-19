@@ -17,9 +17,11 @@ public class GenericBox<T> {
 
     public static void main(String[] args) {
         SimpleBox box = new SimpleBox();
-        // vs
-        GenericBox<Integer> magicBox = new GenericBox<Integer>();
-        magicBox.set(1);
+
+        GenericBox<String> magicBox =
+                new GenericBox<String>();
+        magicBox.set("1");
+        String aaa = magicBox.get();
     }
 
 }

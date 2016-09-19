@@ -26,10 +26,15 @@ public class OrderedPair<K, V> implements Pair<K, V> {
 
 
     public static void main(String[] args) {
-        Pair<String, Integer> p1 = new OrderedPair<String, Integer>("Even", 8);
-        Pair<String, String> p2 = new OrderedPair<String, String>("hello", "world");
+        Pair<String, Integer> p1 =
+                new OrderedPair<String, Integer>("Even", 8);
+        Pair<String, String> p2 =
+                new OrderedPair<String, String>("hello", "world");
 
-        OrderedPair<String, GenericBox<Integer>> p = new OrderedPair<>("primes", new GenericBox<Integer>());
+        OrderedPair<String, GenericBox<Integer>> p
+                = new OrderedPair<>
+                ("primes",
+                        new GenericBox<Integer>());
         p.getValue().set(2);
         p.getKey();
 

@@ -10,8 +10,10 @@ public class Utils {
     public static void print(Map<String,Integer> map) {
         StringBuilder sb = new StringBuilder();
         if (map != null && !map.isEmpty()) {
-            for (Map.Entry<String,Integer> entry : map.entrySet()) {
-                sb.append(entry.getKey() + " " + entry.getValue() + "\n");
+            for (Map.Entry<String,Integer> entry :
+                    map.entrySet()) {
+                sb.append(entry.getKey() + " "
+                        + entry.getValue() + "\n");
             }
         }
         System.out.println(sb.toString());

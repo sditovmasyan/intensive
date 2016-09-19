@@ -9,8 +9,9 @@ import java.util.List;
 public class Meal {
     private List<Item> items = new ArrayList<Item>();
 
-    public void addItem(Item item){
+    public Meal addItem(Item item){
         items.add(item);
+        return this;
     }
 
     public float getCost(){

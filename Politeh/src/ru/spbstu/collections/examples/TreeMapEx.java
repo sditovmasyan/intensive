@@ -4,6 +4,7 @@ import ru.spbstu.nobel.NobelParser;
 import ru.spbstu.nobel.NobelPrize;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -13,7 +14,9 @@ import java.util.TreeMap;
  */
 public class TreeMapEx {
     public static void main(String[] args) throws IOException {
-        Map<String,Integer> map = new TreeMap<>();
+        Map<String,Integer> map = new TreeMap<>(
+                (o1, o2) -> o2.length() - o1.length()
+        );
 
         List<NobelPrize> prizes = NobelParser.getNobelPrizes();
 

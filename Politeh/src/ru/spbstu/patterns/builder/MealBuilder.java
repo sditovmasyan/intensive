@@ -6,8 +6,11 @@ package ru.spbstu.patterns.builder;
 public class MealBuilder {
     public Meal prepareVegMeal (){
         Meal meal = new Meal();
-        meal.addItem(new VegBurger());
-        meal.addItem(new Coke());
+        meal.addItem(new VegBurger())
+                .addItem(new Coke())
+                .addItem(new Coke())
+                .addItem(new Coke());
+
         return meal;
     }
 

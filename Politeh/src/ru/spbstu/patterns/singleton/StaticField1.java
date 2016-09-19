@@ -10,5 +10,6 @@ public class StaticField1 {
      * - Не ленивая инициализация
      */
 
-    public static final StaticField1 INSTANCE = new StaticField1();
+    public static final StaticField1 INSTANCE
+            = new StaticField1();
 }

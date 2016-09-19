@@ -1,5 +1,8 @@
 package ru.spbstu.nobel;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 /**
  * Created by sergey.tovmasyan on 15/09/16.
  */
@@ -42,8 +45,14 @@ public class NobelPrize {
     @Override
     public int hashCode() {
         int result = year;
-        result = 31 * result + (discipline != null ? discipline.hashCode() : 0);
-        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result +
+                (discipline != null ?
+                        discipline.hashCode()
+                        : 0);
+        result = 31 * result + (
+                name != null ?
+                        name.hashCode()
+                        : 0);
         return result;
     }
 

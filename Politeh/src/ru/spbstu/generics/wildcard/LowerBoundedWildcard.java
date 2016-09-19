@@ -19,6 +19,5 @@ public class LowerBoundedWildcard {
         List<Number> li = new ArrayList<>();
         addNumbers(li);
         System.out.println(li);
-
     }
 }

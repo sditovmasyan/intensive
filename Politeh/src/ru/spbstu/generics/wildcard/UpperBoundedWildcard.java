@@ -19,7 +19,6 @@ public class UpperBoundedWildcard {
         List<Integer> li = Arrays.asList(1, 2, 3);
         System.out.println("sum = " + sumOfList(li));
 
-
         List<Double> ld = Arrays.asList(1.2, 2.3, 3.5);
         System.out.println("sum = " + sumOfList(ld));
     }

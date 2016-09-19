@@ -19,7 +19,8 @@ public class HashMapEx {
 
         for (NobelPrize prize : prizes) {
             String discipline = prize.getDiscipline();
-            int count = map.containsKey(discipline) ? map.get(discipline) : 0;
+            int count = map.containsKey(discipline)
+                    ? map.get(discipline) : 0;
             map.put(discipline,count + 1);
         }
 
