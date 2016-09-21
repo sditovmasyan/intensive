@@ -15,5 +15,6 @@ public class CommandPatternDemo {
         broker.takeOrder(sellStockOrder);
 
         broker.placeOrders();
+        broker.placeOrders();
     }
 }
