@@ -6,11 +6,11 @@ package ru.spbstu.oop;
 public class Timer {
     public static void main(String[] args) throws InterruptedException {
         // https://polis.mail.ru/blog/show/1/
-        //System.out.println("Test started. U have 7 minutes");
+        //System.out.println("Student started. U have 7 minutes");
         for(int i=0; i<120; i++) {
             System.out.println("Passed " + i + " seconds");
             Thread.sleep(1000);
         }
-        System.out.println("Test finished");
+        System.out.println("Student finished");
     }
 }
