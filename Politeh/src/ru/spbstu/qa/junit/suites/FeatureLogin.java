@@ -1,5 +1,6 @@
 package ru.spbstu.qa.junit.suites;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**

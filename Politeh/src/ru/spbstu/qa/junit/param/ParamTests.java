@@ -30,7 +30,7 @@ public class ParamTests {
 
     @Test
     public void testWithDifferentParams() {
-        Assert.assertTrue(param1 * param2 > 5);
+        Assert.assertTrue(param1 + " * " + param2 + " < 5",param1 * param2 > 5);
     }
 
 }

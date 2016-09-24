@@ -1,6 +1,7 @@
 package ru.spbstu.qa.mockito;
 
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.List;
 
@@ -15,14 +16,14 @@ import static org.mockito.Mockito.verify;
 public class Behaviour1 {
     @Test
     public void testMockBehavior() {
-        List mockedList = mock(List.class);
+        List mockedList = Mockito.mock(List.class);
 
         //using mock object
         mockedList.add("one");
         mockedList.clear();
 
         //verification
-        verify(mockedList).add("one");
+        verify(mockedList).add("two");
         verify(mockedList).clear();
 
         //never mock List :)

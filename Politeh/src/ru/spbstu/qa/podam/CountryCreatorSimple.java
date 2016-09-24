@@ -11,9 +11,11 @@ import uk.co.jemos.podam.api.PodamFactoryImpl;
 public class CountryCreatorSimple {
     public static void main(String[] args) {
         /** Создаём фабрику */
-        PodamFactory factory = new PodamFactoryImpl();
+        PodamFactory factory =
+                new PodamFactoryImpl();
         /** Генерим страну */
-        Country myPojo = factory.manufacturePojo(Country.class);
+        Country myPojo = factory.
+                manufacturePojo(Country.class);
         /** "Печатаем" страну */
         System.out.println(ReflectionToStringBuilder.toString(myPojo,new RecursiveToStringStyle()));
     }

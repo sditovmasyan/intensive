@@ -12,7 +12,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class Global {
     @Rule
-    public Timeout globalTimeout = Timeout.seconds(2); // 10 seconds max per method tested
+    public Timeout globalTimeout =
+            Timeout.seconds(2); // 10 seconds max per method tested
 
     @Test
     public void testSleep1() throws Exception {

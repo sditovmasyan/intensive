@@ -31,7 +31,7 @@ public class AssertTests {
     @Test
     public void testAssertArrayEquals() {
         byte[] expected = "trial".getBytes();
-        byte[] actual = "trial".getBytes();
+        byte[] actual = "trial2".getBytes();
         assertArrayEquals("failure - byte arrays not same", expected, actual);
     }
 
